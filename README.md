@@ -15,7 +15,7 @@ For testing purpose.
 
 - Download and install composer - [link](https://getcomposer.org/)
 - Clone Project from github `git clone https://github.com/abhishekH1992/oxipay.git`
-- Rename `bash .env.example` file to `.env`
+- Rename `.env.example` file to `.env`
 - Run `composer install`
 - Run `php artisan key:generate`
 - Run `php artisan serve`
