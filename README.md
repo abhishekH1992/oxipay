@@ -34,7 +34,7 @@ CANCEL_URL = {{CANCEL_URL}}
 TEST = {{SET_MODE_TRUE_FALSE}}
 OXIPAY_API_KEY = {{SET_YOUR_OXIPAY_API_KEY}}
 ```
-2. Instead of creating gloable variables
+2. Instead of creating globale variables
 In `oxipay.blade.php`
 ```
 <input type="hidden" class="form-control" name="x_amount" value="{{AMOUNT}}">
