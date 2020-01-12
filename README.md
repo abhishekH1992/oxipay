@@ -1,5 +1,4 @@
 # Oxipay payment gateway integration using Laravel
-## Summary
 
 - [About Oxipay](#about-oxipay)
 - [Project Installation](#project-installation)
