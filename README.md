@@ -13,15 +13,16 @@ This code is for those who would like to integrate oxipay in their e-commerce pl
 
 ## Project Installation
 For testing purpose.
-#### Download Composer
-```bash
-Download and install composer - [link](https://getcomposer.org/)
-```
 
-#### Clone Project from git
-```bash
-
+- Download and install composer - [link](https://getcomposer.org/)
+-```bash
+# Clone Project from git
+git clone https://github.com/abhishekH1992/oxipay.git
 ```
+- Rename ```bash .env.example``` file to ```bash.env```
+- Run ```bash composer install ```
+- Run ```bash php artisan key:generate ```
+- Run ```php artisan serve ```
 
 ## Configuration
 
