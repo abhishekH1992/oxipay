@@ -52,8 +52,9 @@ In `oxipay.blade.php`
 Now also in `OxipayController.php`
 ```
 $oxi = ['x_account_id'=>{YOUR_MARCHANT_ID},'x_amount'=>{AMOUNT},'x_currency'=>{CURRENCY},
-'x_reference'=> $ref,'x_shop_country'=>{COUNTRY_CODE},'x_shop_name'=>{SHOP_NAME},'x_url_callback'=>{CALLBACK_URL},
-'x_url_complete'=>{COMPLETE_URL},'x_url_cancel'=>{CANCEL_URL},'x_test'=>{TEST}];
+'x_reference'=> $ref,'x_shop_country'=>{COUNTRY_CODE},'x_shop_name'=>{SHOP_NAME},
+'x_url_callback'=>{CALLBACK_URL},'x_url_complete'=>{COMPLETE_URL},'x_url_cancel'=>{CANCEL_URL},
+'x_test'=>{TEST}];
 ```
 
 Also in function `$signature = $this->oxipay_sign($oxi, {OXIPAY_API_KEY});`
