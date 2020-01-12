@@ -4,7 +4,7 @@
 - [About Oxipay](#about-oxipay)
 - [Project Installation](#project-installation)
 - [Configuration](#configuration)
-- [References](#reference)
+- [References](#references)
 
 ## About Oxipay
 Oxipay is a flexible payment solution in Australia and New Zealand. Oxipay allows their users to buy now and pay later option. You can integrate oxipay with various e-commerce solution like Shopify, WooCommerce, Magento, Presta Shop, OpenCart and Cube Cart using their plugins.
@@ -51,7 +51,9 @@ In `oxipay.blade.php`
 ```
 Now also in `OxipayController.php`
 ```
-$oxi = ['x_account_id'=>{YOUR_MARCHANT_ID},'x_amount'=>{AMOUNT},'x_currency'=>{CURRENCY},'x_reference'=> $ref,'x_shop_country'=>{COUNTRY_CODE},'x_shop_name'=>{SHOP_NAME},'x_url_callback'=>{CALLBACK_URL},'x_url_complete'=>{COMPLETE_URL},'x_url_cancel'=>{CANCEL_URL},'x_test'=>{TEST}];
+$oxi = ['x_account_id'=>{YOUR_MARCHANT_ID},'x_amount'=>{AMOUNT},'x_currency'=>{CURRENCY},
+'x_reference'=> $ref,'x_shop_country'=>{COUNTRY_CODE},'x_shop_name'=>{SHOP_NAME},'x_url_callback'=>{CALLBACK_URL},
+'x_url_complete'=>{COMPLETE_URL},'x_url_cancel'=>{CANCEL_URL},'x_test'=>{TEST}];
 ```
 
 Also in function `$signature = $this->oxipay_sign($oxi, {OXIPAY_API_KEY});`
