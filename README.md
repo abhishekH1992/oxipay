@@ -37,24 +37,24 @@ OXIPAY_API_KEY = {{SET_YOUR_OXIPAY_API_KEY}}
 2. Instead of creating globale variables
 In `oxipay.blade.php`
 ```
-<input type="hidden" class="form-control" name="x_amount" value="{{AMOUNT}}">
-<input type="hidden" name="x_account_id" value="{{YOUR_MARCHANT_ID}}">
-<input type="hidden" name="x_currency" value="{{CURRENCY}}">
+<input type="hidden" class="form-control" name="x_amount" value="YOUR_AMOUNT">
+<input type="hidden" name="x_account_id" value="YOUR_MARCHANT_ID">
+<input type="hidden" name="x_currency" value="YOUR_CURRENCY_CODE">
 <input type="hidden" name="x_reference" value="{{$ref}}">
-<input type="hidden" name="x_shop_country" value="{{COUNTRY_CODE}}">
-<input type="hidden" name="x_shop_name" value="{{SHOP_NAME}}">
+<input type="hidden" name="x_shop_country" value="COUNTRY_CODE">
+<input type="hidden" name="x_shop_name" value="YOUR_SHOP_NAME">
 <input type="hidden" name="x_signature" value="{{$signature}}">
-<input type="hidden" name="x_url_callback" value="{{CALLBACK_URL}}">
-<input type="hidden" name="x_url_complete" value="{{COMPLETE_URL}}">
-<input type="hidden" name="x_url_cancel" value="{{CANCEL_URL}}">
-<input type="hidden" name="x_test" value="{{TEST}}">
+<input type="hidden" name="x_url_callback" value="YOUR_CALLBACK_URL">
+<input type="hidden" name="x_url_complete" value="YOUR_COMPLETE_URL">
+<input type="hidden" name="x_url_cancel" value="YOUR_CANCEL_URL">
+<input type="hidden" name="x_test" value="YOUR_TEST"># Set true if live. Set false if using sandbox
 ```
 Now also in `OxipayController.php`
 ```
-$oxi = ['x_account_id'=>{YOUR_MARCHANT_ID},'x_amount'=>{AMOUNT},'x_currency'=>{CURRENCY},
-'x_reference'=> $ref,'x_shop_country'=>{COUNTRY_CODE},'x_shop_name'=>{SHOP_NAME},
-'x_url_callback'=>{CALLBACK_URL},'x_url_complete'=>{COMPLETE_URL},'x_url_cancel'=>{CANCEL_URL},
-'x_test'=>{TEST}];
+$oxi = ['x_account_id'=>'YOUR_MARCHANT_ID,'x_amount'=>'YOUR_AMOUNT','x_currency'=>'YOUR_CURRENCY_CODE',
+'x_reference'=> $ref,'x_shop_country'=>'COUNTRY_CODE','x_shop_name'=>YOUR_SHOP_NAME',
+'x_url_callback'=>'YOUR_CALLBACK_URL','x_url_complete'=>'YOUR_COMPLETE_URL','x_url_cancel'=>'YOUR_CANCEL_URL',
+'x_test'=>'TEST];
 ```
 
 Also in function `$signature = $this->oxipay_sign($oxi, {OXIPAY_API_KEY});`
