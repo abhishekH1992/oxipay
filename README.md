@@ -57,7 +57,7 @@ $oxi = ['x_account_id'=>'YOUR_MARCHANT_ID,'x_amount'=>'YOUR_AMOUNT','x_currency'
 'x_test'=>'TEST];
 ```
 
-Also in function `$signature = $this->oxipay_sign($oxi, {OXIPAY_API_KEY});`
+Also change oxipay_api_key to yours `$signature = $this->oxipay_sign($oxi, 'OXIPAY_API_KEY');`
 
 ## References
 Please see official [oxipay](http://docs.oxipay.co.nz/) documantation for more information.
